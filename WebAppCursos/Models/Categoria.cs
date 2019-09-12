@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace WebAppCursos.Models
+{
+    public class Categoria
+    {
+        public int CategoriaID { get; set; }
+        public string Nombre { get; set; }
+        public string Descripcion { get; set; }
+        public Boolean Estadp { get; set; } = true;
+        public ICollection <Curso> Cursos { get; set; }
+     
+    }
+}
