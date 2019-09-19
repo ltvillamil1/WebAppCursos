@@ -77,9 +77,11 @@
 
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+              
+                <a class="btn btn-success" data-toggle="tooltip" data-placement="top" title="editar" asp-action="Edit" asp-route-id="@item.ID"><i class="fas fa-edit"></i></a> |
+                <a class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="detalles" asp-action="Details" asp-route-id="@item.ID"><i class="fas fa-clipboard-list"></i></a> |
+                <a class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="eliminar" asp-action="Delete" asp-route-id="@item.ID"><i class="fas fa-times"></i></a>
+
             </td>
         </tr>
 }
